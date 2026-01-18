@@ -1,9 +1,7 @@
 import { motion, useAnimation } from "motion/react";
 import { useEffect } from "react";
-import emnaPhoto from "../../assets/emna.jpg";
 import { Button } from "./ui/button";
 import { Github, Linkedin, Mail, ArrowDown, Download } from "lucide-react";
-
 export function Hero() {
   const spinControls = useAnimation();
 
@@ -13,13 +11,14 @@ export function Hero() {
 
   useEffect(() => {
     // Spin smooth loop
-    spinControls
-      .start({ rotateY: [0, 360], transition: { duration: 25, ease: "linear", repeat: Infinity } });
+    spinControls.start({
+      rotateY: [0, 360],
+      transition: { duration: 25, ease: "linear", repeat: Infinity },
+    });
   }, [spinControls]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e] text-white">
-      
       {/* Animated Stars Background */}
       <div id="stars" className="absolute inset-0 -z-10" />
 
@@ -43,7 +42,7 @@ export function Hero() {
             style={{ transformStyle: "preserve-3d" }}
           >
             <img
-              src={emnaPhoto}
+              src="guidelines/public/assets/emna.jpg"
               alt="Emna Manai"
               className="w-full h-full object-cover rounded-full"
             />
@@ -56,12 +55,22 @@ export function Hero() {
 
           {/* Title */}
           <div className="inline-block px-6 py-2 rounded-full bg-white/20 border border-white/30 backdrop-blur-md mt-4 mb-6">
-            <p className="text-lg font-medium">AI & Application Development Specialist</p>
+            <p className="text-lg font-medium">
+              AI & Application Development Specialist
+            </p>
           </div>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Passionate about <span className="text-pink-500 font-semibold">artificial intelligence</span> and building <span className="text-purple-500 font-semibold">intelligent, scalable applications</span>.
+            Passionate about{" "}
+            <span className="text-pink-500 font-semibold">
+              artificial intelligence
+            </span>{" "}
+            and building{" "}
+            <span className="text-purple-500 font-semibold">
+              intelligent, scalable applications
+            </span>
+            .
           </p>
 
           {/* Buttons */}

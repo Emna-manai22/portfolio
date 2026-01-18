@@ -1,11 +1,11 @@
-import { ThemeProvider } from "@/app/components/ThemeProvider";
-import { ThemeToggle } from "@/app/components/ThemeToggle";
-import { Hero } from "@/app/components/Hero";
-import { About } from "@/app/components/About";
-import { Skills } from "@/app/components/Skills";
-import { Projects } from "@/app/components/Projects";
-import { Contact } from "@/app/components/Contact";
-import { Footer } from "@/app/components/Footer";
+import { Hero } from "./components/Hero";
+import { ThemeProvider } from "./components/ThemeProvider";
+import { About } from "./components/About";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import { ThemeToggle } from "./components/ThemeToggle";
 
 export default function App() {
   return (
