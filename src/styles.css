@@ -171,3 +171,15 @@
     transform: translateY(0);
   }
 }
+
+/* Hide Lovable.dev injected badge/widget (dev or runtime).
+   This CSS is a non-destructive way to remove the small logo/UI that some
+   Lovable plugins inject into the page during development or preview. */
+#lovable, .lovable, .lovable-badge, [data-lovable], .lovable-widget, .lovable-logo {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+iframe[src*="lovable"], iframe[src*="lovable.dev"] {
+  display: none !important;
+}
