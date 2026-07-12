@@ -7,13 +7,13 @@ import { ProjectArt, type ArtVariant } from "@/components/art/ProjectArt";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Emna Manai — Software Engineer, Full Stack & AI" },
+      { title: "Emna Manai — Software Developer, Full Stack & AI" },
       {
         name: "description",
         content:
-          "Portfolio d'Emna Manai — Software Engineer, Full Stack Developer et AI Enthusiast. Projets, certifications, expérience et parcours.",
+          "Portfolio d'Emna Manai — Software Developer, Full Stack Developer et AI Enthusiast. Projets, certifications, expérience et parcours.",
       },
-      { property: "og:title", content: "Emna Manai — Software Engineer" },
+      { property: "og:title", content: "Emna Manai — Software Developer" },
       {
         property: "og:description",
         content:
@@ -40,7 +40,7 @@ const fr = {
     contact: "Contact",
   },
   hero: {
-    kicker: "Software Engineer · Full Stack · AI Enthusiast",
+    kicker: "Software Developer · Full Stack · AI Enthusiast",
     intro:
       "Jeune diplômée en Génie Logiciel, passionnée par la Data Science, l'Intelligence Artificielle et le développement de solutions innovantes basées sur les données.",
     cv: "Télécharger le CV",
@@ -100,9 +100,9 @@ const en: typeof fr = {
     contact: "Contact",
   },
   hero: {
-    kicker: "Software Engineer · Full Stack · AI Enthusiast",
+    kicker: "Software Developer · Full Stack · AI Enthusiast",
     intro:
-      "A recent Software Engineering graduate passionate about data science, artificial intelligence and building innovative data-driven solutions.",
+      "A recent Software Development graduate passionate about data science, artificial intelligence and building innovative data-driven solutions.",
     cv: "Download CV",
     contact: "Get in touch",
     badge: "Open to opportunities",
@@ -110,8 +110,8 @@ const en: typeof fr = {
   about: {
     kicker: "About",
     title:
-      "A recent Software Engineering graduate, passionate about data science, artificial intelligence and building innovative data-driven solutions.",
-    body: "My background blends rigorous software engineering with a strong curiosity for data — from full-stack application design to building pipelines and AI models. I'm now looking to bring these skills to ambitious data and AI-driven projects.",
+      "A recent Software Development graduate, passionate about data science, artificial intelligence and building innovative data-driven solutions.",
+    body: "My background blends rigorous software development with a strong curiosity for data — from full-stack application design to building pipelines and AI models. I'm now looking to bring these skills to ambitious data and AI-driven projects.",
   },
   skills: { kicker: "Skills", title: "A well-rounded technical foundation." },
   exp: { kicker: "Experience", title: "Professional journey." },
@@ -340,7 +340,7 @@ const skillGroups = [
 const experiences = [
   {
     period: "2026",
-    role: { fr: "PFE — Software Engineer", en: "Final Year Internship — Software Engineer" },
+    role: { fr: "PFE — Software Developer", en: "Final Year Internship — Software Developer" },
     company: "Sopra HR Software Tunisia",
     body: {
       fr: "Conception et développement d'AutoHire, plateforme intelligente de recrutement combinant technologies web modernes et intelligence artificielle (NLP, matching, scoring).",

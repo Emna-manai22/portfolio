@@ -77,11 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Emna Manai — Software Engineer, Full Stack & AI" },
-      { name: "description", content: "Portfolio d'Emna Manai — Software Engineer, Full Stack Developer et AI Enthusiast." },
+      { title: "Emna Manai — Software Developer, Full Stack & AI" },
+      {
+        name: "description",
+        content:
+          "Portfolio d'Emna Manai — Software Developer, Full Stack Developer et AI Enthusiast.",
+      },
       { name: "author", content: "Emna Manai" },
-      { property: "og:title", content: "Emna Manai — Software Engineer" },
-      { property: "og:description", content: "Full Stack Developer & AI Enthusiast — projets, expérience et compétences." },
+      { property: "og:title", content: "Emna Manai — Software Developer" },
+      {
+        property: "og:description",
+        content: "Full Stack Developer & AI Enthusiast — projets, expérience et compétences.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

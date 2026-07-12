@@ -8,7 +8,7 @@ export function PortraitFrame() {
     <>
       <img
         src="/emna-profile.jpg"
-        alt="Emna Manai - Software Engineer"
+        alt="Emna Manai - Software Developer"
         className="h-full w-full object-cover rounded-full border-2 border-[color:var(--gold)]"
       />
     </>
